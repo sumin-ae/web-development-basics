@@ -1,0 +1,24 @@
+/* you can also include google fonts  */
+
+*{ 
+  margin: 0;
+  padding:0 ;
+  font-family: poppins; 
+  font-weight: 300;
+}
+.mainhead{
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  font-family: SF PRO DISPLAY; 
+  font-weight: 100;
+}
+.subhead{ 
+  padding: 20px;
+  font-size: 20px;
+  text-transform: capitalize; /* makes the first letter of each word uppercase */
+  text-decoration: underline; /* underlines the text */
+  text-decoration-color: rgba(54, 150, 188, 0.496);
+}
