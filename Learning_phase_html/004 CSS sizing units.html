@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Fonts, Text & Color Properties</title>
+  <style>
+    *{ 
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+    }
+    .pixel{ 
+      border: 2px solid black;
+      box-sizing: border-box;
+      background-color: red;
+      color: rgb(0, 0, 0);
+      width: 1920px;
+      height: 200px;
+    }
+    #vw{ 
+background-color: purple;
+color: azure;
+ width: 80vw; /*80 % of the viewport width */ 
+ margin: auto;
+    }
+  </style>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+ <h1 class="mainhead"> Working With Css Sizings  </h1>
+  <!-- <h2 class="subhead"> workings with sizings </h2> -->
+   <!-- everything about pixels
+    it depends upon the device resolution for example a 4k monitor has a resolution of 3840 x 2160 pixels & for standard full hd display the resolution is 1920*1080 pixels  -->
+    <div class="pixel">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab exercitationem accusantium, quam voluptatibus molestiae quis adipisci minima fugiat sunt totam debitis iste a delectus illum! Quos optio, quas fugiat culpa laborum sequi quidem? Praesentium voluptas ea soluta aut consectetur quia hic et, qui corporis doloremque molestiae fugiat? Enim voluptatem, repudiandae quod quisquam ex reiciendis at inventore? 
+</div>
+<!-- now lets learn about the view port width and height in css this is the other type of unit -->
+      <div id= "vw"class="viewport">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est amet error iste. Non, unde! Iste quod illum eos quae quia porro nobis asperiores ullam unde repudiandae esse sit rem, enim quo. Dolorum, quam.
+      </div>
+      <h2> ! You cannot add width to inline level elements directly </h2>
+      
+
+
+
+
+      <!-- now let's learn about rem and em units in CSS -->
+      <div class="rem-em-container" style="font-size: 16px;">
+        <!-- REM example -->
+        <div class="rem-example" style="font-size: 1.5rem; background-color: lightblue; padding: 10px; margin-bottom: 10px;">
+          This box uses rem for font size. 1.5rem means 1.5 times the root font size (12px as set in the universal selector).
+        </div>
+        
+        <!-- EM example -->
+        <div class="em-example" style="font-size: 1.5em; background-color: lightgreen; padding: 10px;">
+          This box uses <strong>em</strong> for font size. 1.5em means 1.5 times the font size of its parent (16px in this case).
+        </div>
+      </div>
+
+
+</body>
+</html>
