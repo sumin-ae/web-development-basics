@@ -1,0 +1,34 @@
+<!-- The aim of this is to learn about the display property of CSS and to change the inline elements to block elements and block elements to inline elements and vice versa-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.block{ 
+   display: inline; /* display changes to inline from block */
+}
+.inline{ 
+  display: block;
+  /*The inline element now becomes block element */
+}
+  </style>
+</head>
+<body>
+  <!-- THEORY PART 
+   what are inline level elements and block level elements? 
+   inline level- The elements which occupies space only what's needed
+   block level- occupies all the available width/space in the document screen-->
+   <div class="block">
+    I am a block level element by default 
+   </div>
+   <div class="block"> 
+    I am another block level element 
+   </div>
+  
+   <span class="inline"> I am span, an Inline level element by default </span>
+   <span class="inline"> I am another cute inline level span element</span>
+  
+</body>
+</html>
