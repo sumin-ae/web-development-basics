@@ -1,0 +1,40 @@
+<!-- when making a nav bar list styling is almost done everytime  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling lists</title>
+  <style>
+    nav ul li{ 
+      /* uncomment this to see it work  */
+      /* border: 2px solid red;
+      list-style: decimal;
+      list-style-type: "⭐";list-style-position: inside;
+      list-style: "⭐" inside;   */
+      
+        /* list-style-position: inside makes sure that the border and other properties are applied to the list style as well */
+        padding: 5px;
+       list-style: none;
+      
+    }
+    ul{ 
+      display: flex;
+      padding: 10px;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 20px;
+    }
+  </style>
+ </head>
+ <body>
+  <nav class="navbar">
+    <ul>
+      <li>Home</li>
+      <li>about</li>
+      <li>Contact Me</li>
+      <li>Products</li>
+      
+    </ul>
+  </nav>
+ </body>
+ </html>

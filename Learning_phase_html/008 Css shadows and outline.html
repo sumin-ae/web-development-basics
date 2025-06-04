@@ -1,0 +1,36 @@
+<!-- Here in this code we will learn how to add outlines and shadows to the elements in the html document  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1{ 
+       border: 2px solid blue;
+       margin: 20px;
+       padding: 20px;
+      box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.5); 
+      
+    }
+    p.shadow{ 
+      text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+    }
+
+  </style>
+</head>
+<body>
+  <!-- following is the syntax of the box-shadow property in the CSS 
+  box-shadow: [horizontal-offset] [vertical-offset] [blur-radius] [spread-radius] [color] [inset]; 
+  insent means inner shadow 
+  
+  
+  you can also use text-shadow to get a shadow in the text
+  text-shadow: [horizontal-offset] [vertical-offset] [blur-radius] [color];
+ -->
+  <div class="box1">
+    <p class="shadow"> I am a cute little box </p>
+  </div>
+
+</body>
+</html>

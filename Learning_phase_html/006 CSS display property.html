@@ -13,13 +13,41 @@
   display: block;
   /*The inline element now becomes block element */
 }
+.block1{ 
+  display: inline-block;
+   /* Changing to inline will break the layout, as margin, padding, and width are not respected by pure inline elements.  */
+  border:12px solid red;
+  margin: 1px;
+  padding: 45px;
+
+}
+.inline1{ 
+  display: block;
+  border:12px solid rgb(13, 0, 255);
+  margin: 12px solid red;
+  padding: 45px;
+}
+.invisible{ 
+   display:none; /* removes the entire thing including its spacing from the document  */
+  
+
+}
+.hidden{ 
+  visibility:hidden; /* only turns off the visibility the spacing is still there */
+}
   </style>
 </head>
 <body>
   <!-- THEORY PART 
    what are inline level elements and block level elements? 
    inline level- The elements which occupies space only what's needed
-   block level- occupies all the available width/space in the document screen-->
+   block level- occupies all the available width/space in the document screen 
+   
+   !important 
+   inline elements donot respect/obey attributes such as width, height, margin and padding so to fix that you need to change the display to inline-block so as these properties are valiadated
+   
+   example of this is demonstrated in two layers 
+   -->
    <div class="block">
     I am a block level element by default 
    </div>
@@ -30,5 +58,15 @@
    <span class="inline"> I am span, an Inline level element by default </span>
    <span class="inline"> I am another cute inline level span element</span>
   
+   <!-- margin and padding without the inline-block attribute  -->
+   <div class="block1">
+    I am a block level element by default 
+   </div>
+   <div class="block1"> 
+    I am another block level element 
+   </div>
+  
+   <span class="inline1 hidden invisible"> I am span, an Inline level element by default </span>
+   <span class="inline1 hidden invisible"> I am another cute inline level span element</span>
 </body>
 </html>
